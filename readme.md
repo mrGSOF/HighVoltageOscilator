@@ -9,7 +9,7 @@ A short video demonstrating the HVO can be watch in the link below
 https://www.youtube.com/watch?v=4fjpdIp5VfY
 
 # Installation and hardware setup
-The ArduBridge Python model is a pip package installation and the firmware that runs on the Arduino is installed by programming(also know as uploading).
+The ArduBridge Python model is a pip package installation and the firmware that runs on the Arduino is installed by programming (also know as uploading).
 ## Firmware upload
 To program the Arduino use the xloader application (https://github.com/xinabox/xLoader) and follow these steps:
 1.	Open the xloader application.
