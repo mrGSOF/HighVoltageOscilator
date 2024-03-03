@@ -54,8 +54,8 @@ class ArduHV_Osci(ArduBridge.ArduBridge):
         self._hv_gain = 0.5
 
     def cfg(self):
-        self.gpio.setMode(self.posV_ctPin, self.gpio.OUTPUT, 0)
-        self.gpio.setMode(self.negV_ctPin, self.gpio.OUTPUT, 0)
+        self.gpio.pinMode(self.posV_ctPin, self.gpio.OUTPUT, 0)
+        self.gpio.pinMode(self.negV_ctPin, self.gpio.OUTPUT, 0)
 
     def setFreq_khz(self, khz) -> int:
         """ Set the oscillator's output frequency (Khz) """
