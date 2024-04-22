@@ -17,13 +17,15 @@ def close():
     print('COM port is closed')
 
 def Help():
-    print("osci.setFreq_khz(5) #< To set the output frequency to 5 Khz use")
-    print("osci.setFreq_khz(b) #< Where 'b' is integer between 0 to 255")
-    print("osci.getVoltage()   #< To read the output voltage use")
+    print("osci.setFreq_khz(f) #< Set the output frequency (1 to 15 Khz)")
+    print("osci.setVoltage(b)  #< Set the output voltage {45 is 40Vp-p; 70 is 200Vp-p @5Khz}")
+    print("osci.getVoltage()   #< Read the output voltage")
+    print("osci.setVoltage(45)")
+    print("osci.setFreq_khz(5)")
 
 if __name__ == "__main__":
     #\/\/\/ CHANGE THESE PARAMETERS \/\/\/
-    port = "COM13"       #<--Change to the correct COM-Port to access the Arduino
+    port = "COM12"       #<--Change to the correct COM-Port to access the Arduino
     baudRate = 115200*2  #<--Leave as is
     #/\/\/\   PARAMETERS BLOCK END  /\/\/\
     
